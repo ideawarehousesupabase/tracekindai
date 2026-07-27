@@ -155,6 +155,22 @@ function Landing() {
         </div>
       </Section>
 
+      {/* SOLUTION */}
+      <Section id="solution" eyebrow="The Solution" title="An evidence layer between records and claims">
+        <div className="grid md:grid-cols-2 gap-10">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Tracekind AI sits securely between your <span className="text-foreground">informal supplier records</span> and your
+            <span className="text-foreground"> public-facing sustainability claims</span>. By testing whether the evidence you hold genuinely supports the claims you want to make, we provide an automated proof layer that protects your brand from greenwashing accusations.
+          </p>
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Validates claims against unstructured supplier data.</li>
+            <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Generates batch-level proof graphs.</li>
+            <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Calculates multi-dimensional confidence scores.</li>
+            <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Recommends evidence-aligned claim wording.</li>
+          </ul>
+        </div>
+      </Section>
+
       {/* HOW IT WORKS / DEMO */}
       <Section id="demo" eyebrow="Workflow" title="How Tracekind AI Works">
         <div className="grid sm:grid-cols-3 gap-6 relative">
