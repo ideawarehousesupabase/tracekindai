@@ -7,22 +7,22 @@ export const Route = createFileRoute("/company")({
 
 const COMPETITORS = [
   {
-    name: "Enterprise traceability platforms",
-    example: "TrusTrace, Sourcemap, Retraced",
-    focus: "Tier-1/2 supplier mapping for large brands",
-    gap: "Built for enterprise ERPs - inaccessible pricing and integration burden for SMEs; no support for informal WhatsApp/PDF/photo evidence.",
+    name: "Traditional ERP Traceability",
+    example: "TrusTrace, Sourcemap",
+    focus: "Structured API-first supply chain mapping",
+    gap: "Cannot process the unstructured reality of SMEs (WhatsApp, handwritten invoices, emails). Tracekind AI's architecture is built specifically for unstructured ingestion.",
   },
   {
-    name: "Digital product passport tools",
-    example: "EON, Aware, Certilogo",
-    focus: "Consumer-facing product passports",
-    gap: "Publish claims without verifying them against underlying supplier evidence; no contradiction detection.",
+    name: "Digital Product Passports",
+    example: "EON, Certilogo",
+    focus: "Publishing transparency data to consumers",
+    gap: "They lack the verification layer. Tracekind AI's core engine connects the underlying commercial evidence (invoices) to the marketing claim before it can be published.",
   },
   {
-    name: "Compliance & ESG software",
-    example: "Worldly (Higg), Compliance & Risks",
-    focus: "ESG scoring and questionnaires",
-    gap: "Self-reported data, no batch-level evidence graph, no claim-safe rewording, not designed for founder-led SMEs.",
+    name: "Standard ESG Software",
+    example: "Worldly, ESG Scoring tools",
+    focus: "Self-reported macro-level sustainability scores",
+    gap: "Focuses on company-wide averages rather than batch-level proof. Tracekind AI dynamically builds an Ethical ProofGraph for each specific product batch.",
   },
 ];
 
@@ -239,14 +239,17 @@ function Company() {
               Tracekind AI was born from the intersection of first-hand SME sourcing frustration and rigorous government regulatory experience.
             </p>
             <p>
-              As the founder of <span className="text-foreground font-semibold">Bhavi Arts</span>, a rapidly scaling women-led brand, Bhavi experienced the "Verification Tax" firsthand. Managing complex manufacturing supply chains across India, the UK, the UAE, and Southeast Asia meant relying on fragmented WhatsApp messages and scattered PDFs to prove claims to wholesale buyers like Nykaa and Amazon.
+              <strong className="text-foreground">The Problem Discovery:</strong> As the founder of <span className="text-foreground font-semibold">Bhavi Arts</span>, a rapidly scaling brand, Bhavi experienced the "Verification Tax" firsthand. Managing complex manufacturing supply chains across multiple countries meant relying on fragmented WhatsApp messages and scattered PDFs to prove claims to wholesale buyers like Nykaa and Amazon.
             </p>
             <p>
-              Bhavi then took on a role at <span className="text-foreground font-semibold">HM Revenue & Customs (HMRC)</span>, where she gained deep, practical exposure to strict regulatory compliance, audit frameworks, and evidential rigour.
+              <strong className="text-foreground">Regulatory Context:</strong> Bhavi then took on a role at <span className="text-foreground font-semibold">HM Revenue & Customs (HMRC)</span>, gaining deep, practical exposure to strict regulatory compliance, audit frameworks, and evidential rigour. She realised the incoming CMA Green Claims Code would devastate SMEs lacking enterprise ERPs.
+            </p>
+            <p>
+              <strong className="text-foreground">Research & Vision:</strong> Driven by this insight, she embarked on an intensive R&D journey to conceptualise a solution. The vision was clear: build a platform that could accept the messy reality of SME records and automatically structure them into an auditable evidence graph. By collaborating with technical experts to architect the "Ethical ProofGraph", Tracekind AI evolved from a regulatory concept into a concrete, verifiable platform.
             </p>
             <div className="p-5 mt-4 rounded-xl border border-primary/20 bg-primary/5">
               <p className="text-sm text-foreground">
-                This incredibly rare pairing - understanding the messy, informal reality of SME supply chains, while knowing exactly what government regulators require for an audit - is what makes Tracekind AI uniquely positioned to solve the verification problem for UK independent brands.
+                This incredibly rare pairing - understanding the messy, informal reality of SME supply chains, while knowing exactly what regulators require - is what makes Tracekind AI uniquely positioned to solve the verification problem.
               </p>
             </div>
           </div>

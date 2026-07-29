@@ -32,6 +32,7 @@ export function Footer() {
             <ul className="flex flex-col gap-2">
               <li><a href="/company#founder" className="hover:text-primary transition-colors">Founder Story</a></li>
               <li><a href="/company#roadmap" className="hover:text-primary transition-colors">Roadmap</a></li>
+              <li><a href="/company" className="hover:text-primary transition-colors">Company Details</a></li>
               <li><a href="mailto:hello@tracekind.ai" className="hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -41,6 +42,7 @@ export function Footer() {
               <li><a href="#" className="hover:text-primary transition-colors">Security</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
             </ul>
           </div>
         </div>

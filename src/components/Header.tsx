@@ -1,12 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-  DropdownMenuSeparator,
-} from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
+
 
 export function Header() {
   return (
@@ -23,25 +16,13 @@ export function Header() {
             </div>
           </div>
         </Link>
-        <nav className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1 hover:text-foreground transition-colors outline-none">
-              Menu <ChevronDown className="h-4 w-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="w-48 bg-background border-border">
-              <DropdownMenuItem asChild><a href="/#problem" className="cursor-pointer">Problem</a></DropdownMenuItem>
-              <DropdownMenuItem asChild><a href="/#solution" className="cursor-pointer">Solution</a></DropdownMenuItem>
-              <DropdownMenuItem asChild><a href="/#demo" className="cursor-pointer">Workflow / Demo</a></DropdownMenuItem>
-              <DropdownMenuItem asChild><a href="/#capabilities" className="cursor-pointer">Capabilities (Modules)</a></DropdownMenuItem>
-              <DropdownMenuItem asChild><a href="/#pricing" className="cursor-pointer">Pricing</a></DropdownMenuItem>
-              <DropdownMenuSeparator className="bg-border" />
-              <DropdownMenuItem asChild><Link to="/company" hash="founder" className="cursor-pointer">Founder</Link></DropdownMenuItem>
-              <DropdownMenuItem asChild><Link to="/company" hash="roadmap" className="cursor-pointer">Roadmap</Link></DropdownMenuItem>
-              <DropdownMenuItem asChild><Link to="/company" hash="competitors" className="cursor-pointer">Competitors</Link></DropdownMenuItem>
-              <DropdownMenuItem asChild><Link to="/company" hash="financials" className="cursor-pointer">Financials</Link></DropdownMenuItem>
-              <DropdownMenuItem asChild><Link to="/company" hash="partnerships" className="cursor-pointer">Partnerships</Link></DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-muted-foreground">
+          <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
+          <a href="/#product" className="hover:text-foreground transition-colors">Product</a>
+          <a href="/#technology" className="hover:text-foreground transition-colors">Technology</a>
+          <a href="/#use-cases" className="hover:text-foreground transition-colors">Use Cases</a>
+          <a href="/#research" className="hover:text-foreground transition-colors">Research</a>
+          <Link to="/company" className="hover:text-foreground transition-colors">Company</Link>
         </nav>
         <a
           href="/#pilot"
@@ -49,7 +30,7 @@ export function Header() {
           className="inline-flex items-center rounded-full px-5 py-2 text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition shadow-sm"
           style={{ boxShadow: "var(--shadow-glow)" }}
         >
-          Join the Pilot
+          Pilot Access
         </a>
       </div>
     </header>
