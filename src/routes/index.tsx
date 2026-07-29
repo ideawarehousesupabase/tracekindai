@@ -75,7 +75,7 @@ function Landing() {
               Turn messy supplier records into <span className="text-gradient">claims you can substantiate.</span>
             </h1>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-xl">
-              Tracekind AI is the evidence verification platform that eliminates the "Verification Tax". We connect to Shopify and Xero, extract data from informal WhatsApps and PDFs, and prove your sustainability claims to meet the CMA Green Claims Code.
+              Tracekind AI is an evidence-intelligence platform that connects supplier records, commercial evidence and public-facing sustainability claims. It helps SMEs understand what their evidence supports, where it conflicts, what is missing and what action should be taken next.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
