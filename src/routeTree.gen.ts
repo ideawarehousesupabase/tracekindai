@@ -11,6 +11,10 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CompanyRouteImport } from './routes/company'
+import { Route as TechnologyRouteImport } from './routes/technology'
+import { Route as UseCasesCommercialRouteImport } from './routes/use-cases/commercial'
+import { Route as UseCasesMarketingRouteImport } from './routes/use-cases/marketing'
+import { Route as UseCasesSupplyChainRouteImport } from './routes/use-cases/supply-chain'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +26,86 @@ const CompanyRoute = CompanyRouteImport.update({
   path: '/company',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TechnologyRoute = TechnologyRouteImport.update({
+  id: '/technology',
+  path: '/technology',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UseCasesCommercialRoute = UseCasesCommercialRouteImport.update({
+  id: '/use-cases/commercial',
+  path: '/use-cases/commercial',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UseCasesMarketingRoute = UseCasesMarketingRouteImport.update({
+  id: '/use-cases/marketing',
+  path: '/use-cases/marketing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UseCasesSupplyChainRoute = UseCasesSupplyChainRouteImport.update({
+  id: '/use-cases/supply-chain',
+  path: '/use-cases/supply-chain',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/company': typeof CompanyRoute
+  '/technology': typeof TechnologyRoute
+  '/use-cases/commercial': typeof UseCasesCommercialRoute
+  '/use-cases/marketing': typeof UseCasesMarketingRoute
+  '/use-cases/supply-chain': typeof UseCasesSupplyChainRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/company': typeof CompanyRoute
+  '/technology': typeof TechnologyRoute
+  '/use-cases/commercial': typeof UseCasesCommercialRoute
+  '/use-cases/marketing': typeof UseCasesMarketingRoute
+  '/use-cases/supply-chain': typeof UseCasesSupplyChainRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/company': typeof CompanyRoute
+  '/technology': typeof TechnologyRoute
+  '/use-cases/commercial': typeof UseCasesCommercialRoute
+  '/use-cases/marketing': typeof UseCasesMarketingRoute
+  '/use-cases/supply-chain': typeof UseCasesSupplyChainRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/company'
+  fullPaths:
+    | '/'
+    | '/company'
+    | '/technology'
+    | '/use-cases/commercial'
+    | '/use-cases/marketing'
+    | '/use-cases/supply-chain'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/company'
-  id: '__root__' | '/' | '/company'
+  to:
+    | '/'
+    | '/company'
+    | '/technology'
+    | '/use-cases/commercial'
+    | '/use-cases/marketing'
+    | '/use-cases/supply-chain'
+  id:
+    | '__root__'
+    | '/'
+    | '/company'
+    | '/technology'
+    | '/use-cases/commercial'
+    | '/use-cases/marketing'
+    | '/use-cases/supply-chain'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CompanyRoute: typeof CompanyRoute
+  TechnologyRoute: typeof TechnologyRoute
+  UseCasesCommercialRoute: typeof UseCasesCommercialRoute
+  UseCasesMarketingRoute: typeof UseCasesMarketingRoute
+  UseCasesSupplyChainRoute: typeof UseCasesSupplyChainRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +124,44 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CompanyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/technology': {
+      id: '/technology'
+      path: '/technology'
+      fullPath: '/technology'
+      preLoaderRoute: typeof TechnologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/use-cases/commercial': {
+      id: '/use-cases/commercial'
+      path: '/use-cases/commercial'
+      fullPath: '/use-cases/commercial'
+      preLoaderRoute: typeof UseCasesCommercialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/use-cases/marketing': {
+      id: '/use-cases/marketing'
+      path: '/use-cases/marketing'
+      fullPath: '/use-cases/marketing'
+      preLoaderRoute: typeof UseCasesMarketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/use-cases/supply-chain': {
+      id: '/use-cases/supply-chain'
+      path: '/use-cases/supply-chain'
+      fullPath: '/use-cases/supply-chain'
+      preLoaderRoute: typeof UseCasesSupplyChainRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CompanyRoute: CompanyRoute,
+  TechnologyRoute: TechnologyRoute,
+  UseCasesCommercialRoute: UseCasesCommercialRoute,
+  UseCasesMarketingRoute: UseCasesMarketingRoute,
+  UseCasesSupplyChainRoute: UseCasesSupplyChainRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

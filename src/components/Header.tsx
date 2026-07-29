@@ -21,20 +21,20 @@ export function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-9 text-[13px] font-medium text-muted-foreground">
           <Link to="/" hash="product" className="hover:text-foreground transition-colors">Product</Link>
-          <Link to="/" hash="technology" className="hover:text-foreground transition-colors">Technology</Link>
+          <Link to="/technology" className="hover:text-foreground transition-colors">Technology</Link>
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 hover:text-foreground transition-colors outline-none cursor-pointer">
               Use Cases <ChevronDown className="h-3.5 w-3.5 opacity-70" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-56 bg-background/95 backdrop-blur-md border-border/60 rounded-xl p-1.5 shadow-lg">
               <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-surface text-sm">
-                <a href="/#use-cases-supply-chain">Supply Chain Intelligence</a>
+                <Link to="/use-cases/supply-chain">Supply Chain Intelligence</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-surface text-sm">
-                <a href="/#use-cases-commercial">Commercial Evidence</a>
+                <Link to="/use-cases/commercial">Commercial Evidence</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-surface text-sm">
-                <a href="/#use-cases-marketing">Marketing & Claims</a>
+                <Link to="/use-cases/marketing">Marketing & Claims</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

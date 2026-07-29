@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section } from "../components/Section";
 import heroGraph from "@/assets/product-prototype.jpg";
 import { CheckCircle2, ArrowRight, ShieldCheck, FileSearch, Network, Database, BrainCircuit, ExternalLink } from "lucide-react";
@@ -50,13 +50,13 @@ function Landing() {
               >
                 Apply for Pilot Access <ArrowRight className="h-4 w-4" />
               </a>
-              <a
-                href="#technology"
+              <Link
+                to="/technology"
                 data-track="hero-demo-cta"
                 className="inline-flex justify-center items-center rounded-full px-6 py-3.5 text-sm font-medium border border-border hover:bg-surface transition"
               >
                 Explore the Technology
-              </a>
+              </Link>
             </div>
 
             <div className="mt-10 flex items-center gap-4 text-xs text-muted-foreground">
