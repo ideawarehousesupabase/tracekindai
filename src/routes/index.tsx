@@ -1,10 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section } from "../components/Section";
 import heroGraph from "@/assets/hero-graph.jpg";
-import productPrototype from "@/assets/product-prototype.jpg";
-import { CheckCircle2, ArrowRight, ShieldCheck, FileSearch, CheckCircle, Database, SearchCode, ShieldAlert, Activity } from "lucide-react";
-import { ProofGraphPreview } from "../components/ProofGraphPreview";
-import { ProductExample } from "../components/ProductExample";
+import { CheckCircle2, ArrowRight, ShieldCheck, FileSearch, CheckCircle } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -24,7 +21,7 @@ const CAPABILITIES = [
   {
     icon: <CheckCircle className="h-6 w-6 text-primary mb-3" />,
     title: "Batch-Level Proof",
-    body: "Creates an auditable, batch-level proof graph ready for wholesale buyers and evidence substantiation.",
+    body: "Creates an auditable, batch-level proof graph ready for wholesale buyers and CMA compliance checks.",
   }
 ];
 
@@ -68,14 +65,14 @@ function Landing() {
     <div className="min-h-screen">
       {/* HERO */}
       <section id="top" className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 pt-16 pb-12 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto max-w-7xl px-6 pt-16 pb-20 grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs tracking-[0.18em] uppercase text-muted-foreground mb-4">
               <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
               For UK Independent Brands
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.1]">
-              Turn messy supplier records into <span className="text-gradient">evidence-backed claims.</span>
+              Turn messy supplier records into <span className="text-gradient">bulletproof claims.</span>
             </h1>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-xl">
               Tracekind AI is the evidence verification platform that eliminates the "Verification Tax". We connect to Shopify and Xero, extract data from informal WhatsApps and PDFs, and prove your sustainability claims to meet the CMA Green Claims Code.
@@ -87,14 +84,14 @@ function Landing() {
                 className="inline-flex justify-center items-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition shadow-lg"
                 style={{ boxShadow: "var(--shadow-glow)" }}
               >
-                Apply for Pilot Access <ArrowRight className="h-4 w-4" />
+                Join the Year 1 Pilot <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="#technology"
+                href="#demo"
                 data-track="hero-demo-cta"
-                className="inline-flex justify-center items-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium border border-border hover:bg-surface transition"
+                className="inline-flex justify-center items-center rounded-full px-6 py-3.5 text-sm font-medium border border-border hover:bg-surface transition"
               >
-                Explore the Technology
+                See how it works
               </a>
             </div>
 
@@ -106,7 +103,7 @@ function Landing() {
                   </div>
                 ))}
               </div>
-              <p>Built for UK SMEs.<br/>Integrates with Shopify & Xero (In Development).</p>
+              <p>Trusted by UK SMEs.<br/>Integrates with Shopify & Xero.</p>
             </div>
           </div>
 
@@ -130,21 +127,6 @@ function Landing() {
             </div>
           </div>
         </div>
-        
-        {/* PROTOTYPE IMAGE SECTION */}
-        <div className="mx-auto max-w-7xl px-6 pb-20 pt-8">
-          <div className="text-center mb-6">
-            <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground font-semibold">Illustrative Workflow</span>
-          </div>
-          <div className="rounded-3xl overflow-hidden border border-border shadow-2xl relative">
-            <img 
-              src={productPrototype} 
-              alt="Tracekind AI Product Prototype" 
-              className="w-full object-cover aspect-[16/9] opacity-90"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent pointer-events-none" />
-          </div>
-        </div>
       </section>
 
       {/* REGULATORY TIPPING POINT & PROBLEM */}
@@ -152,7 +134,7 @@ function Landing() {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              UK SMEs spend 3-5 hours a week chasing suppliers for evidence. The CMA's Green Claims Code and the DMCC Act now require environmental claims to be truthful, clear, and substantiated before publication. Tracekind AI automates this, ensuring your claims are structured for compliance review.
+              UK SMEs spend 3-5 hours a week chasing suppliers for evidence. The CMA's Green Claims Code and the DMCC Act now require environmental claims to be truthful, clear, and substantiated before publication. Tracekind AI automates this, ensuring your claims are always audit-ready.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Stop relying on fragmented spreadsheets.</li>
@@ -174,7 +156,7 @@ function Landing() {
       </Section>
 
       {/* SOLUTION */}
-      <Section id="product" eyebrow="The Solution" title="An evidence layer between records and claims">
+      <Section id="solution" eyebrow="The Solution" title="An evidence layer between records and claims">
         <div className="grid md:grid-cols-2 gap-10">
           <p className="text-lg text-muted-foreground leading-relaxed">
             Tracekind AI sits securely between your <span className="text-foreground">informal supplier records</span> and your
@@ -190,61 +172,32 @@ function Landing() {
       </Section>
 
       {/* HOW IT WORKS / DEMO */}
-      <Section id="how-it-works" eyebrow="Workflow" title="How Tracekind AI Works">
-        <div className="grid sm:grid-cols-4 gap-4 relative">
-          <div className="hidden sm:block absolute top-1/2 left-[12%] right-[12%] h-0.5 bg-border -z-10" />
+      <Section id="demo" eyebrow="Workflow" title="How Tracekind AI Works">
+        <div className="grid sm:grid-cols-3 gap-6 relative">
+          <div className="hidden sm:block absolute top-1/2 left-[15%] right-[15%] h-0.5 bg-border -z-10" />
           
           <div className="bg-background border border-border rounded-2xl p-6 text-center relative shadow-sm">
-            <div className="w-10 h-10 mx-auto bg-surface border border-border text-foreground rounded-full flex items-center justify-center mb-4">
-              <Database className="w-5 h-5 text-primary" />
-            </div>
-            <h3 className="font-display font-semibold mb-2">Ingest</h3>
-            <p className="text-xs text-muted-foreground">Connect systems and upload raw unstructured documents.</p>
+            <div className="w-10 h-10 mx-auto bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold mb-4">1</div>
+            <h3 className="font-display font-semibold mb-2">Ingest Data</h3>
+            <p className="text-sm text-muted-foreground">Connect Shopify/Xero and upload raw supplier WhatsApps and PDFs.</p>
           </div>
           
           <div className="bg-background border border-border rounded-2xl p-6 text-center relative shadow-sm">
-            <div className="w-10 h-10 mx-auto bg-surface border border-border text-foreground rounded-full flex items-center justify-center mb-4">
-              <SearchCode className="w-5 h-5 text-primary" />
-            </div>
-            <h3 className="font-display font-semibold mb-2">Structure</h3>
-            <p className="text-xs text-muted-foreground">Extract data points and build relationships between records.</p>
+            <div className="w-10 h-10 mx-auto bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold mb-4">2</div>
+            <h3 className="font-display font-semibold mb-2">AI Verification</h3>
+            <p className="text-sm text-muted-foreground">The AI parses unstructured documents and cross-checks them against your marketing claims.</p>
           </div>
           
           <div className="bg-background border border-border rounded-2xl p-6 text-center relative shadow-sm">
-            <div className="w-10 h-10 mx-auto bg-surface border border-border text-foreground rounded-full flex items-center justify-center mb-4">
-              <ShieldAlert className="w-5 h-5 text-primary" />
-            </div>
-            <h3 className="font-display font-semibold mb-2">Verify</h3>
-            <p className="text-xs text-muted-foreground">Cross-check claims against structured evidence and flag contradictions.</p>
-          </div>
-          
-          <div className="bg-background border border-border rounded-2xl p-6 text-center relative shadow-sm">
-            <div className="w-10 h-10 mx-auto bg-surface border border-border text-foreground rounded-full flex items-center justify-center mb-4">
-              <Activity className="w-5 h-5 text-primary" />
-            </div>
-            <h3 className="font-display font-semibold mb-2">Act</h3>
-            <p className="text-xs text-muted-foreground">Receive confidence scores and recommended claim wording.</p>
+            <div className="w-10 h-10 mx-auto bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold mb-4">3</div>
+            <h3 className="font-display font-semibold mb-2">Get Verified</h3>
+            <p className="text-sm text-muted-foreground">Receive a batch-level evidence graph and a confidence score ready for CMA audits.</p>
           </div>
         </div>
-      </Section>
-
-      {/* TECHNOLOGY / PROOFGRAPH */}
-      <Section id="technology" eyebrow="Core Technology" title="The Ethical ProofGraph">
-        <div className="mb-10 max-w-3xl">
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Our proprietary Ethical ProofGraph maps the complex web of relationships between your marketing claims, product batches, and supplier evidence. It automatically detects contradictions across isolated documents to provide a unified confidence score.
-          </p>
-        </div>
-        <ProofGraphPreview />
-      </Section>
-
-      {/* USE CASES / EXAMPLES */}
-      <Section id="use-cases" eyebrow="In Action" title="Real-World Evidence Verification">
-        <ProductExample />
       </Section>
 
       {/* CORE CAPABILITIES */}
-      <Section id="capabilities" eyebrow="Core Capabilities" title="Supports evidence substantiation">
+      <Section id="capabilities" eyebrow="Core Capabilities" title="Enterprise-grade compliance, built for SMEs">
         <div className="grid sm:grid-cols-3 gap-6">
           {CAPABILITIES.map((c) => (
             <div key={c.title} className="p-6 rounded-2xl border border-border bg-surface/40 hover:border-primary/40 transition">
@@ -257,7 +210,7 @@ function Landing() {
       </Section>
 
       {/* PRICING */}
-      <Section id="pricing" eyebrow="Pricing" title="Indicative Post-Pilot Pricing">
+      <Section id="pricing" eyebrow="Pricing" title="Tiered SaaS built for your reality">
         <div className="grid md:grid-cols-3 gap-5">
           {PRICING.map((p) => (
             <div
@@ -279,8 +232,8 @@ function Landing() {
               <ul className="mt-5 space-y-3 text-sm">
                 {p.features.map((f) => (
                   <li key={f} className="flex gap-2 items-start">
-                     <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
-                     <span className="text-muted-foreground">{f}</span>
+                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
+                    <span className="text-muted-foreground">{f}</span>
                   </li>
                 ))}
               </ul>
@@ -291,40 +244,24 @@ function Landing() {
 
       {/* CTA / PILOT */}
       <section id="pilot" className="mx-auto max-w-7xl px-6 py-16 sm:py-24">
-        <div className="rounded-3xl bg-surface/60 border border-primary/20 p-8 sm:p-16 relative overflow-hidden">
+        <div className="rounded-3xl bg-surface/60 border border-primary/20 p-8 sm:p-16 text-center relative overflow-hidden">
           <div
             aria-hidden
             className="absolute inset-0 opacity-40"
             style={{ background: "radial-gradient(ellipse at center, oklch(0.82 0.16 200 / 0.25), transparent 60%)" }}
           />
-          <div className="relative z-10 text-center max-w-3xl mx-auto">
+          <div className="relative z-10">
             <div className="text-xs tracking-[0.2em] uppercase text-primary font-bold">Year 1 Pilot Programme</div>
             <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl font-semibold">
               Ready to eliminate the Verification Tax?
             </h2>
-            <p className="mt-6 text-base sm:text-lg text-muted-foreground mx-auto">
-              Applications are now open for 8–12 UK independent brands. Cut manual compliance time by 45% and ensure your claims are structured for review.
+            <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+              Applications are now open for 8–12 UK independent brands. Cut manual compliance time by 45% and ensure your claims are audit-ready.
             </p>
-            
-            <div className="mt-10 grid sm:grid-cols-3 gap-6 text-left">
-              <div className="bg-background/80 backdrop-blur rounded-xl p-5 border border-border">
-                <div className="font-semibold text-sm mb-2 text-foreground">Who is it for?</div>
-                <div className="text-sm text-muted-foreground">UK SMEs making sustainability claims, seeking to substantiate their supply chain evidence.</div>
-              </div>
-              <div className="bg-background/80 backdrop-blur rounded-xl p-5 border border-border">
-                <div className="font-semibold text-sm mb-2 text-foreground">Duration & Focus</div>
-                <div className="text-sm text-muted-foreground">3-6 month pilot focusing on validating your core product batches against supplier data.</div>
-              </div>
-              <div className="bg-background/80 backdrop-blur rounded-xl p-5 border border-border">
-                <div className="font-semibold text-sm mb-2 text-foreground">What you receive</div>
-                <div className="text-sm text-muted-foreground">Early access to the Ethical ProofGraph, dedicated onboarding, and priority feature requests.</div>
-              </div>
-            </div>
-
             <a
               href="mailto:hello@tracekind.ai"
               data-track="footer-pilot-cta"
-              className="mt-12 inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-medium bg-primary text-primary-foreground hover:opacity-90 transition shadow-xl hover:scale-105 active:scale-95"
+              className="mt-8 inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-medium bg-primary text-primary-foreground hover:opacity-90 transition shadow-xl hover:scale-105 active:scale-95"
               style={{ boxShadow: "var(--shadow-glow)" }}
             >
               Apply for Pilot Access <ArrowRight className="h-5 w-5" />
