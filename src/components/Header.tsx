@@ -38,7 +38,7 @@ export function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link to="/" hash="research" className="hover:text-foreground transition-colors">Research</Link>
+          <Link to="/research" className="hover:text-foreground transition-colors">Research</Link>
           <Link to="/company" className="hover:text-foreground transition-colors">Company</Link>
         </nav>
         <div className="flex items-center gap-4">

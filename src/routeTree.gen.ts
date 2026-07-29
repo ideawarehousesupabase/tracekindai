@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CompanyRouteImport } from './routes/company'
+import { Route as ResearchRouteImport } from './routes/research'
 import { Route as TechnologyRouteImport } from './routes/technology'
 import { Route as UseCasesCommercialRouteImport } from './routes/use-cases/commercial'
 import { Route as UseCasesMarketingRouteImport } from './routes/use-cases/marketing'
@@ -24,6 +25,11 @@ const IndexRoute = IndexRouteImport.update({
 const CompanyRoute = CompanyRouteImport.update({
   id: '/company',
   path: '/company',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResearchRoute = ResearchRouteImport.update({
+  id: '/research',
+  path: '/research',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TechnologyRoute = TechnologyRouteImport.update({
@@ -50,6 +56,7 @@ const UseCasesSupplyChainRoute = UseCasesSupplyChainRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/company': typeof CompanyRoute
+  '/research': typeof ResearchRoute
   '/technology': typeof TechnologyRoute
   '/use-cases/commercial': typeof UseCasesCommercialRoute
   '/use-cases/marketing': typeof UseCasesMarketingRoute
@@ -58,6 +65,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/company': typeof CompanyRoute
+  '/research': typeof ResearchRoute
   '/technology': typeof TechnologyRoute
   '/use-cases/commercial': typeof UseCasesCommercialRoute
   '/use-cases/marketing': typeof UseCasesMarketingRoute
@@ -67,6 +75,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/company': typeof CompanyRoute
+  '/research': typeof ResearchRoute
   '/technology': typeof TechnologyRoute
   '/use-cases/commercial': typeof UseCasesCommercialRoute
   '/use-cases/marketing': typeof UseCasesMarketingRoute
@@ -77,6 +86,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/company'
+    | '/research'
     | '/technology'
     | '/use-cases/commercial'
     | '/use-cases/marketing'
@@ -85,6 +95,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/company'
+    | '/research'
     | '/technology'
     | '/use-cases/commercial'
     | '/use-cases/marketing'
@@ -93,6 +104,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/company'
+    | '/research'
     | '/technology'
     | '/use-cases/commercial'
     | '/use-cases/marketing'
@@ -102,6 +114,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CompanyRoute: typeof CompanyRoute
+  ResearchRoute: typeof ResearchRoute
   TechnologyRoute: typeof TechnologyRoute
   UseCasesCommercialRoute: typeof UseCasesCommercialRoute
   UseCasesMarketingRoute: typeof UseCasesMarketingRoute
@@ -122,6 +135,13 @@ declare module '@tanstack/react-router' {
       path: '/company'
       fullPath: '/company'
       preLoaderRoute: typeof CompanyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research': {
+      id: '/research'
+      path: '/research'
+      fullPath: '/research'
+      preLoaderRoute: typeof ResearchRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/technology': {
@@ -158,6 +178,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CompanyRoute: CompanyRoute,
+  ResearchRoute: ResearchRoute,
   TechnologyRoute: TechnologyRoute,
   UseCasesCommercialRoute: UseCasesCommercialRoute,
   UseCasesMarketingRoute: UseCasesMarketingRoute,
