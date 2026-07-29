@@ -21,7 +21,7 @@ const CAPABILITIES = [
   {
     icon: <CheckCircle className="h-6 w-6 text-primary mb-3" />,
     title: "Batch-Level Proof",
-    body: "Creates an auditable, batch-level proof graph ready for wholesale buyers and CMA compliance checks.",
+    body: "Creates an auditable, batch-level proof graph ready for wholesale buyers and evidence substantiation.",
   }
 ];
 
@@ -72,7 +72,7 @@ function Landing() {
               For UK Independent Brands
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.1]">
-              Turn messy supplier records into <span className="text-gradient">bulletproof claims.</span>
+              Turn messy supplier records into <span className="text-gradient">claims you can substantiate.</span>
             </h1>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-xl">
               Tracekind AI is the evidence verification platform that eliminates the "Verification Tax". We connect to Shopify and Xero, extract data from informal WhatsApps and PDFs, and prove your sustainability claims to meet the CMA Green Claims Code.
@@ -103,7 +103,7 @@ function Landing() {
                   </div>
                 ))}
               </div>
-              <p>Trusted by UK SMEs.<br/>Integrates with Shopify & Xero.</p>
+              <p>Built for UK SMEs.<br/>Shopify & Xero integrations in development.</p>
             </div>
           </div>
 
@@ -134,7 +134,7 @@ function Landing() {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              UK SMEs spend 3-5 hours a week chasing suppliers for evidence. The CMA's Green Claims Code and the DMCC Act now require environmental claims to be truthful, clear, and substantiated before publication. Tracekind AI automates this, ensuring your claims are always audit-ready.
+              UK SMEs spend 3-5 hours a week chasing suppliers for evidence (Tracekind SME Evidence Survey 2026, n=180). The CMA's Green Claims Code and the DMCC Act now require environmental claims to be truthful, clear, and substantiated before publication. Tracekind AI automates this, ensuring your claims are structured for compliance review and evidence substantiation.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Stop relying on fragmented spreadsheets.</li>
@@ -191,13 +191,13 @@ function Landing() {
           <div className="bg-background border border-border rounded-2xl p-6 text-center relative shadow-sm">
             <div className="w-10 h-10 mx-auto bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold mb-4">3</div>
             <h3 className="font-display font-semibold mb-2">Get Verified</h3>
-            <p className="text-sm text-muted-foreground">Receive a batch-level evidence graph and a confidence score ready for CMA audits.</p>
+            <p className="text-sm text-muted-foreground">Receive a batch-level evidence graph and a confidence score structured for compliance review and evidence substantiation.</p>
           </div>
         </div>
       </Section>
 
       {/* CORE CAPABILITIES */}
-      <Section id="capabilities" eyebrow="Core Capabilities" title="Enterprise-grade compliance, built for SMEs">
+      <Section id="capabilities" eyebrow="Core Capabilities" title="Built to help you substantiate your evidence">
         <div className="grid sm:grid-cols-3 gap-6">
           {CAPABILITIES.map((c) => (
             <div key={c.title} className="p-6 rounded-2xl border border-border bg-surface/40 hover:border-primary/40 transition">
@@ -210,7 +210,7 @@ function Landing() {
       </Section>
 
       {/* PRICING */}
-      <Section id="pricing" eyebrow="Pricing" title="Tiered SaaS built for your reality">
+      <Section id="pricing" eyebrow="Pricing" title="Indicative Post-Pilot Pricing">
         <div className="grid md:grid-cols-3 gap-5">
           {PRICING.map((p) => (
             <div
@@ -256,7 +256,7 @@ function Landing() {
               Ready to eliminate the Verification Tax?
             </h2>
             <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Applications are now open for 8–12 UK independent brands. Cut manual compliance time by 45% and ensure your claims are audit-ready.
+              Applications are now open for 8–12 UK independent brands. Pilot target: up to 45% reduction in manual evidence-management time, ensuring your claims are structured for review.
             </p>
             <a
               href="mailto:hello@tracekind.ai"

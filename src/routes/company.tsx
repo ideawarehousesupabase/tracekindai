@@ -77,10 +77,10 @@ const ROADMAP = [
 ];
 
 const PARTNERSHIPS = [
-  { name: "Shopify", body: "Commerce integration for onboarding independent brands and syncing product and order data." },
-  { name: "Xero", body: "Accounting integration for invoice-based supplier evidence capture." },
+  { name: "Shopify (In Development)", body: "Commerce integration for onboarding independent brands and syncing product and order data." },
+  { name: "Xero (In Development)", body: "Accounting integration for invoice-based supplier evidence capture." },
   { name: "Sustainability consultants", body: "Delivery partners providing sourcing audits and advisory alongside the platform." },
-  { name: "Wholesale networks", body: "Buyer-side channels validating buyer-ready compliance reports for stockist onboarding." },
+  { name: "Wholesale networks", body: "Buyer-side channels validating structured evidence reports for stockist onboarding." },
   { name: "Accelerator & innovation programmes", body: "UK innovation and RegTech programmes supporting research, IP and pilot delivery." },
 ];
 
