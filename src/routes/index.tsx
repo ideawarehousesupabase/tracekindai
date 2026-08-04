@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section } from "../components/Section";
 import heroGraph from "@/assets/product-prototype.jpg";
-import { CheckCircle2, ArrowRight, ShieldCheck, FileSearch, Network, Database, BrainCircuit, ExternalLink } from "lucide-react";
+import { CheckCircle2, ArrowRight, ShieldCheck, FileSearch, Network, Database, BrainCircuit, ExternalLink, Upload, Boxes, Target } from "lucide-react";
 
 import { ProofGraphPreview } from "@/components/ProofGraphPreview";
 import { ProductExample } from "@/components/ProductExample";
@@ -12,10 +12,10 @@ export const Route = createFileRoute("/")({
 });
 
 const HOW_IT_WORKS = [
-  { step: "INGEST", desc: "Connect Shopify/Xero and upload raw supplier WhatsApps, specs, and PDFs." },
-  { step: "STRUCTURE", desc: "AI extracts entities and maps them into a searchable, relational knowledge graph." },
-  { step: "VERIFY", desc: "The engine cross-checks evidence against claims, detecting contradictions across all records." },
-  { step: "ACT", desc: "Receive confidence scores and actionable recommendations to resolve evidence gaps." },
+  { step: "Ingest", desc: "Connect and ingest data from your internal systems and external sources.", icon: <Upload className="h-6 w-6 text-primary" /> },
+  { step: "Structure", desc: "AI models normalize and structure records into a unified evidence layer.", icon: <Boxes className="h-6 w-6 text-primary" /> },
+  { step: "Verify", desc: "We test claims against evidence, detect issues and assess confidence.", icon: <ShieldCheck className="h-6 w-6 text-primary" /> },
+  { step: "Act", desc: "Get recommendations, track remediation and prove what's true.", icon: <Target className="h-6 w-6 text-primary" /> },
 ];
 
 const DIFFERENTIATION = [
@@ -28,46 +28,28 @@ function Landing() {
   return (
     <div className="min-h-screen">
       {/* 1. HERO */}
-      <section id="top" className="relative overflow-hidden">
+      <section id="top" className="relative overflow-hidden bg-[var(--brand-navy)] text-white">
         <div className="mx-auto max-w-7xl px-6 pt-16 pb-20 grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs tracking-[0.18em] uppercase text-muted-foreground mb-4">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-              For UK Independent Brands
-            </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.1]">
-              Turn messy supplier records into <span className="text-gradient">claims you can substantiate.</span>
+              Know what your <br/>evidence actually proves.
             </h1>
-            <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-xl">
-              Tracekind AI is an evidence-intelligence platform that connects supplier records, commercial evidence and public-facing sustainability claims. It helps SMEs understand what their evidence supports, where it conflicts, what is missing and what action should be taken next.
+            <p className="mt-6 text-base sm:text-lg text-white/80 max-w-xl">
+              Tracekind AI connects supplier records, commercial data and marketing claims into a single evidence-intelligence layer—detecting gaps, contradictions and unsupported claims before they become commercial or compliance risks.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
                 href="#pilot"
-                data-track="hero-pilot-cta"
-                className="inline-flex justify-center items-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition shadow-lg"
-                style={{ boxShadow: "var(--shadow-glow)" }}
+                className="inline-flex justify-center items-center rounded-md px-6 py-3.5 text-sm font-medium bg-[var(--brand-teal)] text-white hover:opacity-90 transition"
               >
-                Apply for Pilot Access <ArrowRight className="h-4 w-4" />
+                Apply for Pilot Access
               </a>
               <Link
                 to="/technology"
-                data-track="hero-demo-cta"
-                className="inline-flex justify-center items-center rounded-full px-6 py-3.5 text-sm font-medium border border-border hover:bg-surface transition"
+                className="inline-flex justify-center items-center rounded-md px-6 py-3.5 text-sm font-medium border border-white/30 text-white hover:bg-white/10 transition"
               >
                 Explore the Technology
               </Link>
-            </div>
-
-            <div className="mt-10 flex items-center gap-4 text-xs text-muted-foreground">
-              <div className="flex -space-x-2">
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="h-8 w-8 rounded-full border-2 border-background bg-surface/80 flex items-center justify-center">
-                    <CheckCircle2 className="h-4 w-4 text-primary" />
-                  </div>
-                ))}
-              </div>
-              <p>Built for UK SMEs.<br/>Shopify & Xero integrations in development.</p>
             </div>
           </div>
 
@@ -127,19 +109,32 @@ function Landing() {
       </Section>
 
       {/* 4. HOW IT WORKS */}
-      <Section id="how-it-works" eyebrow="Workflow" title="How it works">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-          <div className="hidden lg:block absolute top-1/2 left-[12%] right-[12%] h-0.5 bg-border -z-10" />
-          
+      <section id="how-it-works" className="mx-auto max-w-7xl px-6 py-24">
+        <h2 className="mb-12 font-display text-3xl font-semibold text-text-primary">
+          How it works
+        </h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
           {HOW_IT_WORKS.map((step, idx) => (
-            <div key={step.step} className="bg-background border border-border rounded-2xl p-6 text-center relative shadow-sm">
-              <div className="w-10 h-10 mx-auto bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold mb-4">{idx + 1}</div>
-              <h3 className="font-display font-semibold mb-2">{step.step}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
+            <div key={step.step} className="flex items-center gap-4">
+              <div className="bg-white border border-border/60 rounded-xl p-5 flex flex-col flex-1 shadow-sm h-full justify-between">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-6 h-6 shrink-0 bg-background-main text-text-secondary rounded-full flex items-center justify-center text-xs font-medium">{idx + 1}</div>
+                  <div className="p-2 border border-border/50 rounded-lg shrink-0">
+                    {step.icon}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-display font-semibold mb-1 text-text-primary">{step.step}</h3>
+                  <p className="text-[13px] text-text-secondary leading-relaxed">{step.desc}</p>
+                </div>
+              </div>
+              {idx < HOW_IT_WORKS.length - 1 && (
+                <ArrowRight className="hidden lg:block h-5 w-5 text-text-secondary shrink-0" strokeWidth={1.5} />
+              )}
             </div>
           ))}
         </div>
-      </Section>
+      </section>
 
       {/* 5. ETHICAL PROOFGRAPH PREVIEW */}
       <Section id="technology">
@@ -252,6 +247,8 @@ function Landing() {
           </div>
         </div>
       </Section>
+
+
 
     </div>
   );
