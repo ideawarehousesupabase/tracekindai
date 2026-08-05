@@ -73,7 +73,7 @@ function Research() {
             <ShieldCheck className="h-6 w-6 text-primary mb-4" />
             <h3 className="font-display text-lg font-semibold mb-2">Contradiction Detection</h3>
             <p className="text-sm text-muted-foreground">
-              By structuring the unstructured, we enable cross-document consistency checks—identifying when a supplier's invoice contradicts a subsequent WhatsApp promise.
+              By structuring the unstructured, we enable cross-document consistency checks, identifying when a supplier's invoice contradicts a subsequent WhatsApp promise.
             </p>
           </div>
         </div>

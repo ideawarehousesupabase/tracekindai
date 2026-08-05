@@ -30,7 +30,7 @@ function SupplyChain() {
           <div className="p-6 rounded-2xl surface-card border-amber-500/30 bg-amber-500/5">
             <h4 className="font-display font-semibold text-amber-500 mb-2">The Risk</h4>
             <p className="text-sm text-muted-foreground">
-              Missing one critical supplier message—like a temporary substitution of materials—can lead to false public claims, regulatory fines, and damaged buyer trust.
+              Missing one critical supplier message, like a temporary substitution of materials, can lead to false public claims, regulatory fines, and damaged buyer trust.
             </p>
           </div>
         </div>

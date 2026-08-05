@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "AI-powered evidence verification and traceability for UK independent fashion and lifestyle SMEs. Substantiate every sustainability claim, batch by batch.",
       },
       { name: "author", content: "Tracekind AI" },
-      { property: "og:title", content: "Tracekind AI — Trace Every Action. Build Every Trust." },
+      { property: "og:title", content: "Tracekind AI: Trace Every Action. Build Every Trust." },
       {
         property: "og:description",
         content:

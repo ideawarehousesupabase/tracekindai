@@ -19,7 +19,7 @@ const HOW_IT_WORKS = [
 ];
 
 const DIFFERENTIATION = [
-  "Proprietary SME Sourcing Evidence Ontology built from real UK SME supplier evidence - not enterprise ERP schemas.",
+  "Proprietary SME Sourcing Evidence Ontology built from real UK SME supplier evidence, not enterprise ERP schemas.",
   "Batch-Level Ethical Proof Graph and Cross-Document Ethical Contradiction Detection to handle unstructured reality.",
   "Built specifically for the informal workflows (WhatsApp, photos, PDFs) of founder-led businesses.",
 ];
@@ -35,7 +35,7 @@ function Landing() {
               Know what your <br/>evidence actually proves.
             </h1>
             <p className="mt-6 text-base sm:text-lg text-white/80 max-w-xl">
-              Tracekind AI connects supplier records, commercial data and marketing claims into a single evidence-intelligence layer—detecting gaps, contradictions and unsupported claims before they become commercial or compliance risks.
+              Tracekind AI connects supplier records, commercial data and marketing claims into a single evidence-intelligence layer, detecting gaps, contradictions and unsupported claims before they become commercial or compliance risks.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
@@ -155,7 +155,7 @@ function Landing() {
       <Section id="differentiation" eyebrow="Differentiation" title="Built for SME reality, not enterprise ERPs">
         <div className="grid md:grid-cols-2 gap-10">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Most traceability platforms are built for enterprise ERPs—meaning inaccessible pricing and a heavy integration burden. They assume perfectly structured data. Tracekind AI is uniquely designed for the messy, informal evidence systems of independent brands.
+            Most traceability platforms are built for enterprise ERPs, meaning inaccessible pricing and a heavy integration burden. They assume perfectly structured data. Tracekind AI is uniquely designed for the messy, informal evidence systems of independent brands.
           </p>
           <ul className="space-y-4">
             {DIFFERENTIATION.map((item, idx) => (
@@ -235,12 +235,12 @@ function Landing() {
             </p>
             <div className="p-5 mt-4 rounded-xl border border-primary/20 bg-primary/5">
               <p className="text-sm text-foreground">
-                This unusually rare pairing—understanding the messy, informal reality of SME supply chains, while knowing exactly what government regulators require to substantiate claims—drove the research and product development behind Tracekind AI.
+                This unusually rare pairing (understanding the messy, informal reality of SME supply chains, while knowing exactly what government regulators require to substantiate claims) drove the research and product development behind Tracekind AI.
               </p>
             </div>
           </div>
           <div className="p-6 rounded-2xl surface-card italic text-foreground flex flex-col justify-center">
-            "We are empowering businesses with intelligent traceability to build a transparent, trusted and better tomorrow - without the administrative burden."
+            "We are empowering businesses with intelligent traceability to build a transparent, trusted and better tomorrow, without the administrative burden."
             <div className="not-italic mt-6 text-xs tracking-[0.18em] uppercase text-primary font-bold">
               Bhavi Poladia · Founder & CEO
             </div>
