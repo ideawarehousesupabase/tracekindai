@@ -27,13 +27,13 @@ export function Header() {
               Use Cases <ChevronDown className="h-3.5 w-3.5 opacity-70" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-56 bg-background/95 backdrop-blur-md border-border/60 rounded-xl p-1.5 shadow-lg">
-              <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-surface text-sm">
+              <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground text-sm">
                 <Link to="/use-cases/supply-chain">Supply Chain Intelligence</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-surface text-sm">
+              <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground text-sm">
                 <Link to="/use-cases/commercial">Commercial Evidence</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-surface text-sm">
+              <DropdownMenuItem asChild className="rounded-lg cursor-pointer py-2.5 px-3 hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground text-sm">
                 <Link to="/use-cases/marketing">Marketing & Claims</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>

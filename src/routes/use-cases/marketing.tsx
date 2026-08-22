@@ -9,7 +9,7 @@ export const Route = createFileRoute("/use-cases/marketing")({
 
 function Marketing() {
   return (
-    <div className="pb-24">
+    <div>
       <div className="mx-auto max-w-7xl px-6 pt-20">
         <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs tracking-[0.18em] uppercase text-primary mb-6 font-bold">
           Use Case

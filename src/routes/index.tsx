@@ -233,11 +233,7 @@ function Landing() {
             <p>
               She later took on a role at <span className="text-foreground font-semibold">HM Revenue & Customs (HMRC)</span>, gaining deep exposure to strict regulatory compliance, audit frameworks, and evidential rigour.
             </p>
-            <div className="p-5 mt-4 rounded-xl border border-primary/20 bg-primary/5">
-              <p className="text-sm text-foreground">
-                This unusually rare pairing (understanding the messy, informal reality of SME supply chains, while knowing exactly what government regulators require to substantiate claims) drove the research and product development behind Tracekind AI.
-              </p>
-            </div>
+
           </div>
           <div className="p-6 rounded-2xl surface-card italic text-foreground flex flex-col justify-center">
             "We are empowering businesses with intelligent traceability to build a transparent, trusted and better tomorrow, without the administrative burden."
