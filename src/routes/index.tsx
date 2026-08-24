@@ -212,8 +212,8 @@ function Landing() {
               <h3 className="font-display text-2xl font-semibold mb-4">What we measure</h3>
               <p className="text-muted-foreground mb-8">Our primary pilot target is demonstrating an up to 45% reduction in manual evidence management time, alongside improved substantiation metrics.</p>
               
-              <a href="mailto:hello@tracekind.ai" className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition shadow-lg" style={{ boxShadow: "var(--shadow-glow)" }}>
-                Apply for Pilot Access <ArrowRight className="h-4 w-4" />
+              <a href="https://tracekind-ai.vercel.app" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition shadow-lg" style={{ boxShadow: "var(--shadow-glow)" }}>
+                Explore the prototype <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>
