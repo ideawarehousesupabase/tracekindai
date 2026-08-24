@@ -60,9 +60,6 @@ function Landing() {
                 alt="Illustrative Workflow"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-border text-[10px] uppercase tracking-wider text-muted-foreground">
-                Product Prototype
-              </div>
             </div>
           </div>
         </div>
