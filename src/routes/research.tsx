@@ -31,7 +31,7 @@ function Research() {
             </p>
             <div className="space-y-4">
               <div className="p-5 rounded-xl surface-card">
-                <div className="text-3xl font-display font-semibold text-primary mb-1">3-5 hours</div>
+                <div className="text-3xl font-display font-semibold text-primary mb-1">3 to 5 hours</div>
                 <div className="text-sm text-muted-foreground">Average time lost per week chasing suppliers for unstructured evidence.</div>
               </div>
               <div className="p-5 rounded-xl surface-card">
@@ -64,7 +64,7 @@ function Research() {
           </div>
           <div className="p-8 rounded-2xl surface-card hover:border-primary/40 transition">
             <Network className="h-6 w-6 text-primary mb-4" />
-            <h3 className="font-display text-lg font-semibold mb-2">Batch-Level Graph</h3>
+            <h3 className="font-display text-lg font-semibold mb-2">Batch Level Graph</h3>
             <p className="text-sm text-muted-foreground">
               Traditional ERPs track items. The Ethical ProofGraph is a novel architecture that maps the relational matrix between a specific marketing claim and a specific physical batch.
             </p>
@@ -73,7 +73,7 @@ function Research() {
             <ShieldCheck className="h-6 w-6 text-primary mb-4" />
             <h3 className="font-display text-lg font-semibold mb-2">Contradiction Detection</h3>
             <p className="text-sm text-muted-foreground">
-              By structuring the unstructured, we enable cross-document consistency checks, identifying when a supplier's invoice contradicts a subsequent WhatsApp promise.
+              By structuring the unstructured, we enable cross document consistency checks, identifying when a supplier's invoice contradicts a subsequent WhatsApp promise.
             </p>
           </div>
         </div>

@@ -9,36 +9,36 @@ const FINANCIALS_BUDGET = [
   { label: "Product & engineering", value: "45%" },
   { label: "Pilot delivery & customer success", value: "20%" },
   { label: "Compliance, legal & IP", value: "15%" },
-  { label: "Go-to-market & partnerships", value: "15%" },
+  { label: "Go to market & partnerships", value: "15%" },
   { label: "Operations & contingency", value: "5%" },
 ];
 
 const FINANCIALS_REVENUE = [
   "Tiered monthly SaaS: £90 / £250 / £500",
-  "One-time Ontology Onboarding & API Sync fee: £470",
-  "One-time Sourcing Health Assessment fee: £520",
-  "Future: anonymised benchmarking and buyer-side compliance reporting",
+  "One time Ontology Onboarding & API Sync fee: £470",
+  "One time Sourcing Health Assessment fee: £520",
+  "Future: anonymised benchmarking and buyer side compliance reporting",
 ];
 
 const FINANCIALS_PROJECTIONS = [
-  { year: "Year 1", detail: "8-12 pilot brands · evidence-model validation · early recurring revenue" },
-  { year: "Year 2", detail: "50-100 UK brands · full Shopify, Etsy & Xero rollout · scaling ARR" },
-  { year: "Year 3-5", detail: "200+ UK brands · Scotland, Wales, Northern Ireland · Berlin & Paris entry" },
+  { year: "Year 1", detail: "8 to 12 pilot brands · evidence model validation · early recurring revenue" },
+  { year: "Year 2", detail: "50 to 100 UK brands · full Shopify, Etsy & Xero rollout · scaling ARR" },
+  { year: "Years 3 to 5", detail: "200+ UK brands · Scotland, Wales, Northern Ireland · Berlin & Paris entry" },
 ];
 
 const ROADMAP = [
   {
     year: "Year 1",
     title: "UK Pilot",
-    points: ["8-12 brands", "Evidence model validation"],
+    points: ["8 to 12 brands", "Evidence model validation"],
   },
   {
     year: "Year 2",
     title: "Full UK Rollout",
-    points: ["50-100 brands", "Shopify, Etsy & Xero integrations"],
+    points: ["50 to 100 brands", "Shopify, Etsy & Xero integrations"],
   },
   {
-    year: "Year 3-5",
+    year: "Years 3 to 5",
     title: "UK Expansion & Initial International Entry",
     points: [
       "200+ UK brands",
@@ -50,9 +50,9 @@ const ROADMAP = [
 
 const PARTNERSHIPS = [
   { name: "Shopify (In Development)", body: "Commerce integration for onboarding independent brands and syncing product and order data." },
-  { name: "Xero (In Development)", body: "Accounting integration for invoice-based supplier evidence capture." },
-  { name: "Sustainability consultants", body: "Delivery partners providing sourcing audits and advisory alongside the platform." },
-  { name: "Wholesale networks", body: "Buyer-side channels validating structured evidence reports for stockist onboarding." },
+  { name: "Xero (In Development)", body: "Accounting integration for invoice based supplier evidence capture." },
+  { name: "Shopify & Etsy", body: "Direct integrations to auto verify product claims at the point of sale." },
+  { name: "Wholesale networks", body: "Buyer side channels validating structured evidence reports for stockist onboarding." },
   { name: "Accelerator & innovation programmes", body: "UK innovation and RegTech programmes supporting research, IP and pilot delivery." },
 ];
 
@@ -63,7 +63,7 @@ const RECRUITMENT = [
   },
   {
     year: "Year 2",
-    hires: ["2-3 additional engineers", "Product designer", "Customer success manager", "Partnerships lead", "Marketing lead"],
+    hires: ["2 to 3 additional engineers", "Product designer", "Customer success manager", "Partnerships lead", "Marketing lead"],
   },
   {
     year: "Year 3",

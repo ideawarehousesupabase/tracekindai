@@ -20,8 +20,8 @@ const HOW_IT_WORKS = [
 
 const DIFFERENTIATION = [
   "Proprietary SME Sourcing Evidence Ontology built from real UK SME supplier evidence, not enterprise ERP schemas.",
-  "Batch-Level Ethical Proof Graph and Cross-Document Ethical Contradiction Detection to handle unstructured reality.",
-  "Built specifically for the informal workflows (WhatsApp, photos, PDFs) of founder-led businesses.",
+  "Batch Level Ethical Proof Graph and Cross Document Ethical Contradiction Detection to handle unstructured reality.",
+  "Built specifically for the informal workflows (WhatsApp, photos, PDFs) of founder led businesses.",
 ];
 
 function Landing() {
@@ -196,21 +196,21 @@ function Landing() {
           <div className="relative z-10 grid md:grid-cols-2 gap-10">
             <div>
               <h3 className="font-display text-2xl font-semibold mb-4">Who is it for?</h3>
-              <p className="text-muted-foreground mb-6">Applications are open for 8–12 UK independent fashion and lifestyle brands dealing with complex, informal supplier records.</p>
+              <p className="text-muted-foreground mb-6">Applications are open for 8 to 12 UK independent fashion and lifestyle brands dealing with complex, informal supplier records.</p>
               
               <h3 className="font-display text-2xl font-semibold mb-4">Duration & Cost</h3>
-              <p className="text-muted-foreground mb-6">6-month structured engagement. Access to the platform is provided at early-stage pilot rates, which are significantly below the indicative post-pilot pricing.</p>
+              <p className="text-muted-foreground mb-6">6 month structured engagement. Access to the platform is provided at early stage pilot rates, which are significantly below the indicative post pilot pricing.</p>
             </div>
             <div>
               <h3 className="font-display text-2xl font-semibold mb-4">What you receive</h3>
               <ul className="space-y-2 text-muted-foreground mb-6">
                 <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Early access to the AI Evidence Engine</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Hands-on onboarding & data structuring</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Hands on onboarding & data structuring</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Direct input into the product roadmap</li>
               </ul>
               
               <h3 className="font-display text-2xl font-semibold mb-4">What we measure</h3>
-              <p className="text-muted-foreground mb-8">Our primary pilot target is demonstrating an up to 45% reduction in manual evidence-management time, alongside improved substantiation metrics.</p>
+              <p className="text-muted-foreground mb-8">Our primary pilot target is demonstrating an up to 45% reduction in manual evidence management time, alongside improved substantiation metrics.</p>
               
               <a href="mailto:hello@tracekind.ai" className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition shadow-lg" style={{ boxShadow: "var(--shadow-glow)" }}>
                 Apply for Pilot Access <ArrowRight className="h-4 w-4" />

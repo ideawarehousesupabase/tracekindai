@@ -46,7 +46,7 @@ function Commercial() {
           <div className="p-8 rounded-2xl surface-card">
             <ShieldCheck className="h-6 w-6 text-primary mb-4" />
             <h3 className="font-display text-xl font-semibold mb-3">Volume Reconciliation</h3>
-            <p className="text-sm text-muted-foreground">The AI cross-checks the volume of certified materials purchased against the volume of products sold.</p>
+            <p className="text-sm text-muted-foreground">The AI cross checks the volume of certified materials purchased against the volume of products sold.</p>
           </div>
           <div className="p-8 rounded-2xl surface-card bg-primary/5 border-primary/20">
             <div className="text-xs tracking-[0.18em] uppercase text-primary font-bold mb-4">Result</div>
