@@ -53,14 +53,12 @@ function Landing() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 relative w-full aspect-square lg:aspect-auto lg:h-[600px]">
-            <div className="absolute inset-0 rounded-2xl overflow-hidden glow-border" style={{ boxShadow: "var(--shadow-card)" }}>
-              <img
-                src={heroGraph}
-                alt="Illustrative Workflow"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="order-1 lg:order-2 w-full">
+            <img
+              src={heroGraph}
+              alt="Dashboard Prototype"
+              className="w-full h-auto drop-shadow-2xl"
+            />
           </div>
         </div>
       </section>
